@@ -37,7 +37,7 @@ header {
 }
 
 .navigation ul a {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #e8e8e8;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -81,7 +81,7 @@ main .introduce {
   padding: 5px 25px;
   border-radius: 10%;
   background-color: rgb(0, 0, 0);
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: rgb(255, 255, 255);
   transition: color 0.3s ease;
   transition: background-color 0.3s ease;
@@ -95,4 +95,38 @@ main .introduce {
 .ntf-list img {
   width: 50%;
   height: auto;
+}
+
+/* 响应式媒体 */
+@media (max-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .navigation ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+
+  .navigation ul li {
+    margin: 5px 0;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .navigation .logo {
+    max-width: 30%;
+    height: auto;
+  }
 }
