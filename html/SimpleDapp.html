@@ -5,13 +5,14 @@
     <!-- TODO 我没加的-->
     <title>My Awesome DApp</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="SimpleDappStyle.css" />
   </head>
   <body>
     <!-- 头部 -->
     <header>
-      <nav>
+      <nav class="navigation">
         <!-- logo -->
-        <img src="Logo.png" alt="Dapp Logo" />
+        <img src="./image/logo.png" alt="Dapp Logo" class="logo" />
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Market</a></li>
@@ -23,28 +24,54 @@
     <!-- 特色内容主体部分 -->
     <main>
       <!-- 介绍 -->
-      <section>
+      <section class="introduce">
         <h2>Welcome to My Awesome DApp</h2>
         <p>Discover and trade amazing NFTS</p>
       </section>
 
-      <section>
+      <section class="ntf-container">
         <h2>Featured NFTs</h2>
         <!-- NFTs list -->
-        <article>
-          <figure>
-            <img src="nft1.png" alt="NFT 1" />
-            <figcaption>NTF title 1</figcaption>
-          </figure>
-          <p>Description of NFT 1.</p>
-        </article>
-        <article>
-          <figure>
-            <img src="nft2.png" alt="NFT 2" />
-            <figcaption>NTF title 2</figcaption>
-          </figure>
-          <p>Description of NFT 2.</p>
-        </article>
+        <div class="ntf-list">
+          <article>
+            <img src="image/ntf1.jpg" alt="NFT 1" />
+            <h3>NFT Title 1</h3>
+            <p>Description of NFT 1.</p>
+            <button>Mint</button>
+          </article>
+          <article>
+            <img src="image/nft2.jpg" alt="NFT 2" />
+            <h3>NFT Title 2</h3>
+            <p>Description of NFT 2.</p>
+            <button>Mint</button>
+          </article>
+          <article>
+            <img src="image/nft2.jpg" alt="NFT 2" />
+            <h3>NFT Title 2</h3>
+            <p>Description of NFT 2.</p>
+            <button>Mint</button>
+          </article>
+          <article>
+            <img src="image/nft2.jpg" alt="NFT 2" />
+            <h3>NFT Title 2</h3>
+            <p>Description of NFT 2.</p>
+            <button>Mint</button>
+          </article>
+          <!-- <article>
+            <figure>
+              <img src="nft1.png" alt="NFT 1" />
+              <figcaption>NTF title 1</figcaption>
+            </figure>
+            <p>Description of NFT 1.</p>
+          </article>
+          <article>
+            <figure>
+              <img src="nft2.png" alt="NFT 2" />
+              <figcaption>NTF title 2</figcaption>
+            </figure>
+            <p>Description of NFT 2.</p>
+          </article> -->
+        </div>
       </section>
     </main>
     <!-- 页脚 -->

@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.navigation .logo {
+  max-width: 15%;
+  height: auto;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.navigation ul a {
+  font-size: 1.5em;
+  color: #e8e8e8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navigation ul a:hover {
+  color: #ffffff;
+}
+
+main {
+  width: 100%;
+}
+
+main .introduce {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ntf-container {
+  width: 100%;
+  text-align: center;
+}
+
+.ntf-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.ntf-list article {
+  padding: 10px;
+}
+
+.ntf-list button {
+  text-align: center;
+  margin: 5px 0 0 0;
+  padding: 5px 25px;
+  border-radius: 10%;
+  background-color: rgb(0, 0, 0);
+  font-size: 0.9em;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.ntf-list button:hover {
+  background-color: #767676;
+}
+
+.ntf-list img {
+  width: 50%;
+  height: auto;
+}
