@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 更改背景颜色 -->
+    <button id="button" onclick="changeBackground()">hensin!</button>
+
+    <!-- 图像交换器 -->
+    <div style="margin-top: 50px">
+      <img
+        src="../html/image/ntf1.jpg"
+        alt="imaga1"
+        id="image1"
+        width="100"
+        height="100"
+      />
+      <img src="../html/image/nft2.jpg"" alt="image2" id="image2" width="100"
+      height="100">
+      <button onclick="changeSrc()">移形大法</button>
+    </div>
+
+    <!-- 动态表格 -->
+     
+
+    <script>
+      // 更改背景颜色
+      function changeBackground() {
+        // 生成随机数,Math.floor() 是做什么的？向下取整
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        const randomRGB = `RGB(${r},${g},${b})`;
+        document.body.style.backgroundColor = randomRGB;
+      }
+
+      //  换src
+      function changeSrc() {
+        const img1 = document.getElementById("image1");
+        const img2 = document.getElementById("image2");
+        const img1Src = img1.getAttribute("src");
+        const img2Src = img2.getAttribute("src");
+        img1.setAttribute("src", img2Src);
+        img2.setAttribute("src", img1Src);
+      }
+    </script>
+  </body>
+</html>
